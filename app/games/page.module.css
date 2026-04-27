@@ -1,0 +1,138 @@
+:global(body) {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #07111f;
+  color: white;
+}
+
+:global(a) {
+  text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 90px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #07111f;
+  box-sizing: border-box;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar h2 a {
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.navbar div {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar div a {
+  color: white;
+  font-weight: 700;
+}
+
+.navbar div a:hover {
+  color: #3b82f6;
+}
+
+/* HEADER */
+.header {
+  padding: 70px 8%;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2a5f, #07111f);
+}
+
+.header h1 {
+  font-size: 58px;
+  margin: 0;
+}
+
+.header p {
+  color: #cbd5e1;
+  font-size: 20px;
+  margin: 18px 0 30px;
+}
+
+.search {
+  width: 100%;
+  max-width: 460px;
+  padding: 16px 22px;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* GAMES */
+.container {
+  padding: 60px 8%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: #101c2f;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 18px;
+}
+
+.cardBody h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.cardBody p {
+  color: #94a3b8;
+  font-size: 14px;
+  height: 42px;
+  overflow: hidden;
+}
+
+.cardBody span {
+  display: block;
+  color: #facc15;
+  margin: 12px 0;
+}
+
+.detailBtn {
+  display: block;
+  text-align: center;
+  padding: 11px;
+  background: #2563eb;
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.detailBtn:hover {
+  background: #1d4ed8;
+}
